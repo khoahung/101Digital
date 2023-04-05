@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "c338ea71-e138-4ba9-87bd-cc30625323f8",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2461924"
+	},
+	"item": [
+		{
+			"name": "Add New Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"location\":\"Vietnam\",\n    \"menu\":\"orange juice\",\n    \"contact\":\"0986456764\",\n    \"price\":5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addNewOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addNewOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Order By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/getOrderById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"getOrderById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Customer By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/getCustomerById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"getCustomerById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\":\"Hanoi,Vietnam\",\n    \"name\":\"Nguyen Tat Hung\",\n    \"mobilephone\":\"0986456764\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addNewCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addNewCustomer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
